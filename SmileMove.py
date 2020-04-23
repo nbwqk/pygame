@@ -10,7 +10,7 @@ keep_going=True
 picx=0
 picy=0
 BLACK=(0,0,0)
-#timer=pygame.time.Clock()
+timer=pygame.time.Clock()
 
 GREEN=(0,255,0)
 radius=50
@@ -26,6 +26,6 @@ while keep_going:
         #screen.blit(pic,(picx,picy))
         pygame.draw.circle(screen,GREEN,(picx,picy),radius)
         pygame.display.update()
-        #timer.tick(60)
+        timer.tick(60)
 
 pygame.quit()
